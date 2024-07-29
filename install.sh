@@ -80,7 +80,8 @@ tls-cipher $CC_CIPHER
 client-config-dir /etc/openvpn/ccd
 status /var/log/openvpn/status.log
 verb 3
-management localhost 7505" >>/etc/openvpn/server.conf
+management localhost 7505
+client-config-dir /etc/openvpn/ccd" >>/etc/openvpn/server.conf
 
 	mkdir -p /etc/openvpn/ccd
 	mkdir -p /var/log/openvpn
